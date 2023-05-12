@@ -1,0 +1,281 @@
+@import "../base/mixins";
+@import "../base/listas";
+@import "../base/extends";
+
+.article-title-ingenieria{
+    @extend %article;
+    background: linear-gradient(289.68deg, #fcaf67 -10.45%, #fd0800 115.75%);
+}
+
+section{
+    background: linear-gradient( #ffdfcd , #d53e0f );
+    display: grid;
+    .grid-container-ingenieria{
+        @include grilla(grid, repeat(38, 200px), repeat(5, 1fr));
+        font-size: nth($font-size, 1);
+        width: 100%;
+        margin: 0 auto;
+        font-family: nth($font-family, 1); 
+        text-align: left; 
+        background: linear-gradient( #ffdfcd , #d53e0f );
+    }
+    .grid-img{
+        width: 100%;
+        height: 100%;
+    }
+        .item-ingenieria-uno {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 5; 
+            padding: 7% 5% 7% 10%; 
+        }
+
+        .item-ingenieria-2dos {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 5;
+            grid-row-end: 7; 
+            padding: 0% 5% 0% 10%; 
+        }
+     }
+    
+        .item-ingenieria-tres {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 7;
+            grid-row-end: 10; 
+            padding: 7% 5% 7% 10%; 
+        }
+    
+    
+        .item-ingenieria-cuatro {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 10;
+            grid-row-end: 13; 
+            padding: 7% 5% 7% 10%; 
+        }
+    
+    
+        .item-ingenieria-cinco {
+            grid-column-start: 3;
+            grid-column-end:5;
+            grid-row-start: 13;
+            grid-row-end: 16; 
+            padding: 0% 5% 7% 10%; 
+        }
+    
+        .item-ingenieria-2cinco {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 13;
+            grid-row-end: 16; 
+            padding: 00% 0% 10% 10%; 
+        }
+    
+        .item-ingenieria-seis {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 16;
+            grid-row-end: 18; 
+            padding: 0% 5% 7% 10%; 
+        }
+    
+        .item-ingenieria-2seis {
+            grid-column-start: 2;
+            grid-column-end: 5;
+            grid-row-start: 19;
+            grid-row-end: 22; 
+            padding: 0% 5% 0% 0%; 
+        }
+    
+        .item-ingenieria-siete {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 22;
+            grid-row-end: 24; 
+            padding: 5% 5% 7% 10%;
+        }
+    
+        .item-ingenieria-ocho {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 25;
+            grid-row-end: 34; 
+            padding: 5% 5% 7% 10%; 
+        }
+
+
+section{
+@media screen and (max-width: 767px){
+    .grid-container-ingenieria {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: repeat(62, 200px);
+        grid-template-columns: repeat(5, 1fr); 
+        background: linear-gradient( #ffdfcd , #d53e0f );
+    }
+    .grid-img{
+        width: 100%;
+        height: 100%;
+    }
+    .item-ingenieria-uno {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 9; 
+        padding: 7% 5% 7% 10%; 
+    }
+    .item-ingenieria-2dos {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 9;
+        grid-row-end: 11; 
+        padding: 0% 0% 0% 0%; 
+    }
+    .item-ingenieria-tres {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 11;
+        grid-row-end: 17; 
+        padding: 7% 5% 7% 10%; 
+    }
+    .item-ingenieria-cuatro {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 17;
+        grid-row-end: 21; 
+        padding: 7% 5% 7% 10%; 
+    }
+    .item-ingenieria-cinco {
+        grid-column-start: 1;
+        grid-column-end:6;
+        grid-row-start: 21;
+        grid-row-end: 23; 
+        padding: 0% 5% 7% 10%; 
+    }
+    .item-ingenieria-2cinco {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 23;
+        grid-row-end: 25; 
+        padding: 10% 5% 5% 5%; 
+    }
+    .item-ingenieria-seis {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 25;
+        grid-row-end: 30; 
+        padding: 5% 5% 7% 10%; 
+    }
+    .item-ingenieria-2seis {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 30;
+        grid-row-end: 32; 
+        padding: 5% 5% 5% 5%; 
+    }
+    .item-ingenieria-siete {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 32;
+        grid-row-end: 37; 
+        padding: 15% 5% 7% 10%;
+    }
+    .item-ingenieria-ocho {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 37;
+        grid-row-end: 62; 
+        padding: 5% 5% 7% 5%; 
+    }
+}
+}
+section{
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .grid-container-ingenieria {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: repeat(43, 200px);
+        grid-template-columns: repeat(5, 1fr); 
+        background: linear-gradient( #ffdfcd , #d53e0f );
+    }
+    .grid-img{
+        width: 100%;
+        height: 100%;
+    }
+    .item-ingenieria-uno {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 7; 
+        padding: 7% 5% 0% 10%; 
+    }
+    .item-ingenieria-2dos {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 7;
+        grid-row-end: 9; 
+        padding: 7% 10% 0% 10%; 
+    }
+    .item-ingenieria-tres {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 9;
+        grid-row-end: 14; 
+        padding: 7% 5% 7% 10%; 
+    }
+    .item-ingenieria-cuatro {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 14;
+        grid-row-end: 18; 
+        padding: 7% 5% 7% 10%; 
+    }
+    .item-ingenieria-cinco {
+        grid-column-start: 1;
+        grid-column-end:6;
+        grid-row-start: 18;
+        grid-row-end: 20; 
+        padding: 5% 5% 7% 10%; 
+    }
+    .item-ingenieria-2cinco {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 20;
+        grid-row-end: 22; 
+        padding: 5% 5% 5% 5%; 
+    }
+    .item-ingenieria-seis {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 22;
+        grid-row-end: 26; 
+        padding: 5% 5% 7% 10%; 
+    }
+    .item-ingenieria-2seis {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 26;
+        grid-row-end: 28; 
+        padding: 5% 5% 5% 5%; 
+    }
+    .item-ingenieria-siete {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 28;
+        grid-row-end: 32; 
+        padding: 5% 5% 7% 10%;
+    }
+    .item-ingenieria-ocho {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 32;
+        grid-row-end: 45; 
+        padding: 5% 5% 7% 10%; 
+    }
+}
+}

@@ -1,0 +1,205 @@
+@import "../base/mixins";
+@import "../base/listas";
+@import "../base/extends";
+.article-title-ciencia{
+    @extend %article;
+    background: linear-gradient(289.68deg, #c6ebd5 -10.45%, #117c6f 115.75%);
+}
+.grid-container-ciencia{
+    @include grilla(grid, repeat(21, 200px), repeat(6, 1fr));
+    
+    font-size: nth($font-size, 1);
+    text-align: left;
+    font-family: nth($font-family , 1);
+    background: linear-gradient( #c6ebd5 , #117c6f 115.75%);
+    width: 100%;
+    margin: 0 auto;
+}
+.item-ciencia-uno {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5; 
+    padding: 7% 5% 7% 10%; 
+}
+.item-ciencia-2uno {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 5; 
+    padding: 7% 10% 7% 0%;  
+}
+.item-ciencia-dos {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 7; 
+    padding: 0% 10% 7% 5%;   
+}
+.item-ciencia-2dos {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 8;
+    grid-row-end: 10; 
+    padding: 0% 13% 0% 13%;
+}
+.item-ciencia-tres {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 10;
+    grid-row-end: 12; 
+    padding: 5% 5% 7% 7%;  
+}
+.item-ciencia-1tres {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 13;
+    grid-row-end: 16; 
+    padding: 0% 0% 0% 0%;
+}
+.item-ciencia-2tres {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start:13 ;
+    grid-row-end: 15; 
+    padding: 0% 7% 7% 7%;
+}
+.item-ciencia-cuatro {
+   grid-column-start: 1;
+   grid-column-end: 6;
+   grid-row-start: 16;
+   grid-row-end: 24;
+   padding: 5% 10% 7% 5%;    
+}
+@media screen and (max-width: 767px){
+    /*---------- C I E N C I A --------------- */
+    .grid-container-ciencia {
+        width: 100%;
+        margin: 0 ;
+        display: grid;
+        grid-template-rows: repeat(27, 200px);
+        grid-template-columns: 1;
+    }
+    .item-ciencia-uno {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 5; 
+        padding: 7% 5% 7% 7%;
+    }
+    .item-ciencia-2uno {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 5;
+        grid-row-end: 7;  
+        padding: 7% 10% 7% 10%;
+    }
+    .item-ciencia-dos {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 7;
+        grid-row-end: 12;  
+        padding: 7% 5% 7% 7%;
+    }
+    .item-ciencia-2dos {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 12;
+        grid-row-end: 14;  
+        padding: 5% 13% 5% 13%;
+    }
+    .item-ciencia-tres {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 14;
+        grid-row-end: 17;  
+        padding: 7% 5% 7% 7%;
+    }
+    .item-ciencia-1tres {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 17;
+        grid-row-end: 19; 
+        padding: 7% 5% 7% 7%;
+    }
+    .item-ciencia-2tres {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 19;
+        grid-row-end: 23; 
+        padding: 7% 5% 7% 7%;
+    }
+    .item-ciencia-cuatro {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 23;
+    grid-row-end: 32;
+    padding: 7% 5% 7% 7%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    /* -------------- C I E N C I A -------------- */
+    .grid-container-ciencia {
+        width: 100%;
+        margin: 0 ;
+        display: grid;
+        grid-template-rows: repeat(27, 200px);
+        grid-template-columns: 1;
+    }
+    .item-ciencia-uno {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 4; 
+        padding: 7% 5% 7% 7%;
+    }
+    .item-ciencia-2uno {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 4;
+        grid-row-end: 6;  
+        padding: 7% 10% 7% 10%;
+    }
+    .item-ciencia-dos {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 6;
+        grid-row-end: 9;  
+        padding: 0% 5% 7% 7%;
+    }
+    .item-ciencia-2dos {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 9;
+        grid-row-end: 11;  
+        padding: 7% 13% 0% 13%;
+    }
+    .item-ciencia-tres {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 11;
+        grid-row-end: 14;  
+        padding: 7% 5% 7% 7%;
+    }
+    .item-ciencia-1tres {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 14;
+        grid-row-end: 16; 
+        padding: 0% 0% 10% 0%;
+    }
+    .item-ciencia-2tres {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 16;
+        grid-row-end: 19; 
+        padding: 0% 5% 7% 7%;
+    }
+    .item-ciencia-cuatro {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 18;
+        grid-row-end: 30;
+        padding: 15% 5% 7% 7%;
+    }
+}

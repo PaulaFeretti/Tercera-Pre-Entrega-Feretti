@@ -1,0 +1,26 @@
+@import "../base/listas";
+header{
+    nav{
+        .bg-body-tertiary{
+            background-color: nth($colores, 1 );
+        }
+        div{
+            a{
+                .logo{
+                    width: nth($font-size, 7);
+                }
+            }
+            div{
+                div{
+                    .navbar-nav :hover{
+                        font-size: nth($font-size, 4);
+                        display: flex;
+                        transform: scale(2);
+                        justify-content: space-between;
+                        border-bottom: 2px solid #000; 
+                    }
+                }
+            }
+        }
+    }
+}
